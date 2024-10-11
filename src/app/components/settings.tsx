@@ -1,7 +1,6 @@
 'use client';
 
-import React, { useMemo } from "react";
-
+import React, { useState, useMemo } from "react";
 
 const kids = [
   [
@@ -21,8 +20,6 @@ const kids = [
       state: "2",
     },
   ],
-
-
   [
     {
       id: "fract",
@@ -45,8 +42,6 @@ const kids = [
       state: "2",
     },
   ],
-
-
   [
     {
       id: "neg",
@@ -71,7 +66,9 @@ const kids = [
   ],
 ];
 
-export default function Settings({ grade, setGrade, setSubject }:any) {
+export default function Settings({ grade, setGrade, setSubject }: any) {
+  const [selectedSubject, setSelectedSubject] = useState<string | null>(null);
+
   const options = useMemo(() => Array.from({ length: 10 }, (_, i) => i + 2), []);
 
   const selectedKids = useMemo(() => {
@@ -85,7 +82,12 @@ export default function Settings({ grade, setGrade, setSubject }:any) {
   }, [grade]);
 
   const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    setGrade(Number(event.target.value)); 
+    setGrade(Number(event.target.value));
+  };
+
+  const handleClick = (state: string) => {
+    setSelectedSubject(state);
+    setSubject(state); // Это, вероятно, передается извне для установки текущего предмета
   };
 
   return (
@@ -118,9 +120,13 @@ export default function Settings({ grade, setGrade, setSubject }:any) {
       <div className="flex flex-col items-start text-xl mt-4 w-full">
         {selectedKids.map((section) => (
           <button
-            onClick={()=>setSubject(section.state)}
+            onClick={() => handleClick(section.state)}
             key={section.id}
-            className="bg-white p-3 mt-4 rounded-2xl hover:bg-gray-200 transition-colors w-full text-left"
+            className={`p-3 mt-4 rounded-2xl transition-colors w-full text-left ${
+              selectedSubject === section.state
+                ? 'bg-blue-500 text-white'
+                : 'bg-white text-black'
+            }`}
           >
             {section.name}
           </button>
