@@ -21,7 +21,9 @@ export default function Questions({ setSubject, subject }: any) {
                     </option>
                   ))}
                 </select>
+                
               </div>
+              
             ))}
           </div>
         </div>

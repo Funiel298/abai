@@ -6,6 +6,8 @@ export const sections = [
           { label: 'Оценка', options: Array.from({ length: 10 }, (_, i) => i + 1) }, 
           { label: 'Решение', options: ['С подсказками', 'Без подсказок', 'Не смог решить'] },
         ],
+
+comments: "",
       },
       {
         name: 'Сложение',
@@ -13,6 +15,7 @@ export const sections = [
           { label: 'Оценка', options: Array.from({ length: 10 }, (_, i) => i + 1) }, 
           { label: 'Решение', options: ['С подсказками', 'Без подсказок', 'Не смог решить'] },
         ],
+        comments: "",
       },
         {
           name: 'Умножение',
@@ -20,6 +23,7 @@ export const sections = [
             { label: 'Оценка', options: Array.from({ length: 10 }, (_, i) => i + 1) },
             { label: 'Решение', options: ['С подсказками', 'Без подсказок', 'Не смог решить'] },
           ],
+comments: "",
         },
         {
           name: 'Деление',
@@ -27,7 +31,9 @@ export const sections = [
             { label: 'Оценка', options: Array.from({ length: 10 }, (_, i) => i + 1) },
             { label: 'Решение', options: ['С подсказками', 'Без подсказок', 'Не смог решить'] },
           ],
+comments: "",
         },
+        
     ],
     //Equations
     [
@@ -43,6 +49,7 @@ export const sections = [
             { label: 'Оценка', options: Array.from({ length: 10 }, (_, i) => i + 1) },
             { label: 'Решение', options: ['С подсказками', 'Без подсказок', 'Не смог решить'] },
           ],
+comments: "",
         },
         {
           name: 'Уравнение по сложнее',
@@ -50,6 +57,7 @@ export const sections = [
             { label: 'Оценка', options: Array.from({ length: 10 }, (_, i) => i + 1) },
             { label: 'Решение', options: ['С подсказками', 'Без подсказок', 'Не смог решить'] },
           ],
+comments: "",
         },
     ],
     //Text
@@ -67,6 +75,7 @@ export const sections = [
             { label: 'Оценка', options: Array.from({ length: 10 }, (_, i) => i + 1) },
             { label: 'Решение', options: ['С подсказками', 'Без подсказок', 'Не смог решить'] },
           ],
+comments: "",
         },
         {
           name: 'Логические',
@@ -74,6 +83,7 @@ export const sections = [
             { label: 'Оценка', options: Array.from({ length: 10 }, (_, i) => i + 1) },
             { label: 'Решение', options: ['С подсказками', 'Без подсказок', 'Не смог решить'] },
           ],
+comments: "",
         },
     ],
     //fract
@@ -91,6 +101,7 @@ export const sections = [
             { label: 'Оценка', options: Array.from({ length: 10 }, (_, i) => i + 1) },
             { label: 'Решение', options: ['С подсказками', 'Без подсказок', 'Не смог решить'] },
           ],
+comments: "",
         },
         {
           name: 'Деление',
@@ -98,6 +109,7 @@ export const sections = [
             { label: 'Оценка', options: Array.from({ length: 10 }, (_, i) => i + 1) },
             { label: 'Решение', options: ['С подсказками', 'Без подсказок', 'Не смог решить'] },
           ],
+comments: "",
         },
     ],
     //dec
@@ -122,6 +134,7 @@ export const sections = [
             { label: 'Оценка', options: Array.from({ length: 10 }, (_, i) => i + 1) },
             { label: 'Решение', options: ['С подсказками', 'Без подсказок', 'Не смог решить'] },
           ],
+comments: "",
         },
         {
           name: 'Деление',
@@ -129,6 +142,7 @@ export const sections = [
             { label: 'Оценка', options: Array.from({ length: 10 }, (_, i) => i + 1) },
             { label: 'Решение', options: ['С подсказками', 'Без подсказок', 'Не смог решить'] },
           ],
+comments: "",
         },
     ],
     //proc
@@ -180,6 +194,7 @@ export const sections = [
             { label: 'Оценка', options: Array.from({ length: 10 }, (_, i) => i + 1) },
             { label: 'Решение', options: ['С подсказками', 'Без подсказок', 'Не смог решить'] },
           ],
+comments: "",
         },
         {
           name: 'Параллелограм',
@@ -187,6 +202,7 @@ export const sections = [
             { label: 'Оценка', options: Array.from({ length: 10 }, (_, i) => i + 1) },
             { label: 'Решение', options: ['С подсказками', 'Без подсказок', 'Не смог решить'] },
           ],
+comments: "",
         },
         {
           name: 'Трапеция',
@@ -194,6 +210,7 @@ export const sections = [
             { label: 'Оценка', options: Array.from({ length: 10 }, (_, i) => i + 1) },
             { label: 'Решение', options: ['С подсказками', 'Без подсказок', 'Не смог решить'] },
           ],
+comments: "",
         },
     ],
     
